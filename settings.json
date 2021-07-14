@@ -1,0 +1,63 @@
+{
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "vim.cursorStylePerMode.insert": "underline",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindings": [
+    
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [":"],
+            "after": [":"]
+        },
+        {
+            "before": [";"],
+            "after": [":"]
+        },
+        {
+            "before": ["æ"],
+            "after": [":"]
+        },
+        {
+            "before": ["Æ"],
+            "after": [":"]
+        },
+        {
+            "before": ["þ"],
+            "after": ["/"]
+        },
+        {
+            "before": ["<Space>"],
+            "after": ["@", "q"]
+        },
+        {
+            "before": ["+"],
+            "after": ["#"]
+        }
+    ],
+    "editor.lineNumbers": "on",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "remote.SSH.configFile": "C:\\Users\\teiturg\\.ssh\\config",
+    "emulator.emulatorPath": "C:\\Users\\teiturg\\AppData\\Local\\Android\\Sdk\\emulator",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 1,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "gruvboxMaterial.darkWorkbench": "high-contrast",
+    "gruvboxMaterial.darkContrast": "soft",
+    "editor.minimap.enabled": false,
+    "vim.useSystemClipboard": true
+}
