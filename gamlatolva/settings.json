@@ -1,7 +1,5 @@
 {
     "workbench.colorTheme": "Gruvbox Material Dark",
-    "gruvboxMaterial.darkWorkbench": "high-contrast",
-    "gruvboxMaterial.darkContrast": "soft",
     "vim.cursorStylePerMode.insert": "underline",
     "vim.hlsearch": true,
     "vim.normalModeKeyBindings": [
@@ -37,10 +35,34 @@
             "after": ["#"]
         }
     ],
-    "editor.lineNumbers": "on",
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnCommitCharacter": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "emulator.emulatorPath": "C:\\Users\\teiturg\\AppData\\Local\\Android\\Sdk\\emulator",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 1,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "gruvboxMaterial.darkWorkbench": "high-contrast",
+    "gruvboxMaterial.darkContrast": "soft",
     "editor.minimap.enabled": false,
     "vim.useSystemClipboard": true,
     "editor.tabSize": 2,
+    "gruvboxMaterial.lightContrast": "soft",
+    "gruvboxMaterial.lightWorkbench": "high-contrast",
+    "remote.SSH.remotePlatform": {
+        "54.74.55.89": "linux"
+    }
 }
