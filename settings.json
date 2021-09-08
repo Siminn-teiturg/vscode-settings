@@ -39,6 +39,7 @@
     ],
     "editor.lineNumbers": "on",
     "editor.lineNumbers": "relative",
+    "editor.cursorBlinking": "solid",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.minimap.enabled": false,
     "vim.useSystemClipboard": true,
