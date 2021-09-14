@@ -36,5 +36,9 @@
         "key": "ctrl+w", 
         "command": "deleteWordEndLeft",
         "when": "terminalFocus"
+    },
+    { 
+        "key": "ctrl+oem_6",
+        "command": "extension.vim_escape"
     }
 ]
