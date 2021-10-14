@@ -35,7 +35,15 @@
         {
             "before": ["+"],
             "after": ["#"]
-        }
+        },
+        { // uncomment line
+            "before": ["`"],
+            "after": ["0", "w", "x", "x"]
+        },
+        { // comment out line
+            "before": ["¬"],
+            "after": ["0", "w", "i", "/", "/", "<Esc>", "0"]
+        },
     ],
     "editor.lineNumbers": "on",
     "editor.lineNumbers": "relative",
