@@ -40,5 +40,13 @@
     { 
         "key": "ctrl+oem_6",
         "command": "extension.vim_escape"
+    },
+    { // browser style tab cycling
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditorInGroup"
     }
 ]
