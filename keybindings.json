@@ -58,5 +58,13 @@
         "key": "ctrl+k",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus" 
+    },
+    { 
+        "key": "ctrl+o",
+        "command": "workbench.action.files.openFolder",
+    },
+    { 
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.files.openFile",
     }
 ]
