@@ -2,8 +2,7 @@ def Automaton(lst):
     curr = "0"
     for i in lst:
         curr = adj[int(curr)][int(i)]
-    if curr == "1": return True
-    return False
+    return curr == "1"
 
 adj = [
     ["0", "1"],

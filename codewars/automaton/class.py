@@ -8,8 +8,7 @@ class Automaton(object):
         curr = "0"
         for i in commands:
             curr = self.states[int(curr)][int(i)]
-        if curr == "1": return True
-        return False
+        return curr == "1"
 
 my_automaton = Automaton()
 print(my_automaton.read_commands(["1", "0", "0", "1"]))
