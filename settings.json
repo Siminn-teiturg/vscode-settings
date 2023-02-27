@@ -1,13 +1,17 @@
 {
     "workbench.colorTheme": "Gruvbox Material Dark",
-    "gruvboxMaterial.darkWorkbench": "high-contrast",
-    "gruvboxMaterial.darkContrast": "soft",
+    "gruvboxMaterial.darkWorkbench": "flat",
+    "gruvboxMaterial.darkContrast": "hard",
     "vim.cursorStylePerMode.insert": "underline",
     "vim.hlsearch": true,
     "vim.normalModeKeyBindings": [
     
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        // FIX https://github.com/VSCodeVim/Vim/issues/8157#issuecomment-1426704638
+        // Wait for new release, else we should migrate to using vscode-neovim extension
+        { "before": [ "u" ], "commands": [ "undo" ] },
+        { "before": [ "c-r" ], "commands": [ "redo" ] },
         {
             "before": [":"],
             "after": [":"]
