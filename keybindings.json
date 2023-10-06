@@ -1,17 +1,23 @@
 // Place your key bindings in this file to override the defaults
 [
-    // new terinal i3wm binding
-    { 
+    { // browser style tab cycling
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    { // new terinal i3wm binding 
         "key": "ctrl+enter", 
         "command": "workbench.action.terminal.toggleTerminal"
     },
-    // Toggle between terminal and editor focus
-    { 
-        "key": "ctrl+space", 
+    { // Toggle between terminal and editor focus 
+        "key": "ctrl+j", 
         "command": "workbench.action.terminal.focus"
     },
-    { 
-        "key": "ctrl+space", 
+    {
+        "key": "ctrl+k", 
         "command": "workbench.action.focusActiveEditorGroup", 
         "when": "terminalFocus"
     },
@@ -19,14 +25,6 @@
     { 
         "key": "ctrl+h", 
         "command": "workbench.action.focusPreviousGroup"
-    },
-    { 
-        "key": "ctrl+j", 
-        "command": "workbench.action.focusPreviousGroup"
-    },
-    { 
-        "key": "ctrl+k", 
-        "command": "workbench.action.focusNextGroup"
     },
     { 
         "key": "ctrl+l", 
@@ -37,34 +35,24 @@
         "command": "deleteWordEndLeft",
         "when": "terminalFocus"
     },
-    { 
-        "key": "ctrl+oem_6",
-        "command": "extension.vim_escape"
-    },
-    { // browser style tab cycling
-        "key": "ctrl+tab",
-        "command": "workbench.action.nextEditorInGroup"
-    },
     {
-        "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditorInGroup"
-    },
-    { // cycle autocomp suggestions
         "key": "ctrl+j",
         "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus" 
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
-    { 
+    {
+        "key": "ctrl+n",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
         "key": "ctrl+k",
         "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus" 
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
-    { 
-        "key": "ctrl+o",
-        "command": "workbench.action.files.openFolder",
+    {
+        "key": "ctrl+p",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
-    { 
-        "key": "ctrl+shift+o",
-        "command": "workbench.action.files.openFile",
-    }
 ]

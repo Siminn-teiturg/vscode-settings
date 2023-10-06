@@ -2,11 +2,18 @@
     "workbench.colorTheme": "Gruvbox Material Dark",
     "gruvboxMaterial.darkWorkbench": "flat",
     "gruvboxMaterial.darkContrast": "hard",
+    "workbench.startupEditor": "none",
+
+    // editor
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "solid",
+
+    // vim settings
     "vim.cursorStylePerMode.insert": "underline",
-    "vim.hlsearch": true,
-    "vim.normalModeKeyBindings": [
-    
-    ],
+    "vim.useSystemClipboard": true,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.searchHighlightColor": "rgb(214, 93, 14, 0.8)",
+    "vim.searchMatchColor": "rgb(214, 93, 14, 0.8)",
     "vim.normalModeKeyBindingsNonRecursive": [
         // FIX https://github.com/VSCodeVim/Vim/issues/8157#issuecomment-1426704638
         // Wait for new release, else we should migrate to using vscode-neovim extension
@@ -40,23 +47,36 @@
             "before": ["+"],
             "after": ["#"]
         },
-        { // uncomment line
+        { // comment out line
             "before": ["`"],
+            "after": ["0", "w", "i", "/", "/", "<Space>", "<Esc>", "0"]
+        },
+        { // uncomment line
+            "before": ["¬"],
             "after": ["0", "w", "x", "x"]
         },
-        { // comment out line
-            "before": ["¬"],
-            "after": ["0", "w", "i", "/", "/", "<Esc>", "0"]
-        },
     ],
-    "editor.lineNumbers": "on",
-    "editor.lineNumbers": "relative",
-    "editor.cursorBlinking": "solid",
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.minimap.enabled": false,
-    "vim.useSystemClipboard": true,
-    "editor.tabSize": 2,
-    "terminal.integrated.commandsToSkipShell": [
-        "-workbench.action.quickOpen"
-    ]
+    "security.workspace.trust.untrustedFiles": "open",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+// Controls the font family.
+//"editor.fontFamily": "Caskaydia Cove",
+"editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+"haskell.manageHLS": "GHCup",
+"[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[python]": {
+    "editor.formatOnType": true
+},
+"redhat.telemetry.enabled": false,
+"git.confirmSync": false,
+"git.enableSmartCommit": true,
+"editor.acceptSuggestionOnCommitCharacter": false,
+"explorer.confirmDelete": false,
+"workbench.editor.enablePreview": false,
+"workbench.editor.enablePreviewFromQuickOpen": false,
+"editor.tabSize": 2,
 }
