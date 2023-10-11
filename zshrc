@@ -1,3 +1,7 @@
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[red]%}@%{$fg[blue]%}%M %{$fg[cyan]%}%1~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -53,6 +57,11 @@ alias gpull="git pull"
 alias gb="git branch"
 alias gch="git checkout"
 alias tvx="cd ~/GitHub/tvx"
+# cd alias
+alias ..="cd .."
+alias ../..="cd ../.."
+alias ../../..="cd ../../.."
+alias ../../../..="cd ../../../.."
 
 alias vim="nvim"
 
@@ -63,9 +72,15 @@ function run { g++ -o $1 $1.cpp }
 function rn { npx react-native init $1 --template react-native-template-typescript }
 function rename { echo -ne "\e]1;$1\a" }
 function logcat { adb logcat '*:S' ReactNative:V ReactNativeJS:V -e "$1" }
+function nesc { ca65 $1.asm -o $1.o -t nes }
+function nesl { ld65 $1.o -o $1.nes -t nes }
 
 
 #[ -f "/Users/teiturg/.ghcup/env" ] && source "/Users/teiturg/.ghcup/env" # ghcup-env
 [ -f "/Users/teiturg/.ghcup/env" ] && source "/Users/teiturg/.ghcup/env" # ghcup-env
 # adb logcat '*:S' ReactNative:V ReactNativeJS:V -e "insert_search_herna"
 
+# nvm cringe
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
