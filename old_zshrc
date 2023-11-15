@@ -14,8 +14,7 @@ autoload -Uz compinit && compinit
 
 complete -C '/usr/local/bin/aws_completer' aws
 
-# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 export PATH=/usr/local/bin/aws_completer/:$PATH
 
@@ -28,7 +27,6 @@ zstyle ':completion:*:*:cat:*:*files' ignored-patterns '*~*.*' # cat ignores c/c
 
 
 source ~/.zsh/vi-mode/vi-mode.plugin.zsh
-source ~/.zsh/fzf-tab-completion/zsh/fzf-zsh-completion.sh
 #source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 #fpath=(path/to/zsh-completions/src $fpath)
@@ -40,7 +38,6 @@ setopt HIST_IGNORE_DUPS
 
 # alias
 alias zshrc="vim ~/.zshrc"
-alias codez="code ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
 alias srcz="source ~/.zshrc"
 alias greyniraws="ssh -i ~/.ssh/siminn-tv-voice.pem ubuntu@54.74.55.89"
