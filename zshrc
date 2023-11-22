@@ -12,7 +12,26 @@ zmodload zsh/complist
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 
-complete -C '/usr/local/bin/aws_completer' aws
+#complete -C '/usr/local/bin/aws_completer' aws
+
+# vi mode
+bindkey -v
+
+# Yank to the system clipboard
+function vi-yank-xclip {
+    zle vi-yank
+   echo "$CUTBUFFER" | pbcopy -i
+}
+zle -N vi-yank-xclip
+bindkey -M vicmd 'y' vi-yank-xclip
+
+# Paste from the system clipboard, install xsel
+# vi-append-x-selection () { RBUFFER=$(xsel -o -p </dev/null)$RBUFFER; }
+# zle -N vi-append-x-selection
+# bindkey -a '^X' vi-append-x-selection
+# vi-yank-x-selection () { print -rn -- $CUTBUFFER | xsel -i -p; }
+# zle -N vi-yank-x-selection
+# bindkey -a '^Y' vi-yank-x-selection
 
 # zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
