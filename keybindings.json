@@ -1,58 +1,82 @@
 // Place your key bindings in this file to override the defaults
 [
-    { // browser style tab cycling
-        "key": "ctrl+tab",
-        "command": "workbench.action.nextEditorInGroup"
+    {
+      // browser style tab cycling
+      "key": "ctrl+tab",
+      "command": "workbench.action.nextEditorInGroup"
     },
     {
-        "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditorInGroup"
-    },
-    { // new terinal i3wm binding 
-        "key": "ctrl+enter", 
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    { // Toggle between terminal and editor focus 
-        "key": "ctrl+j", 
-        "command": "workbench.action.terminal.focus"
+      "key": "ctrl+shift+tab",
+      "command": "workbench.action.previousEditorInGroup"
     },
     {
-        "key": "ctrl+k", 
-        "command": "workbench.action.focusActiveEditorGroup", 
-        "when": "terminalFocus"
+      // new terinal i3wm binding
+      "key": "ctrl+enter",
+      "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+      // Toggle between terminal and editor focus
+      "key": "ctrl+j",
+      "command": "workbench.action.terminal.focus"
+    },
+    {
+      "key": "ctrl+k",
+      "command": "workbench.action.focusActiveEditorGroup",
+      "when": "terminalFocus"
+    },
+    // vim bindings in quick open
+    {
+      "key": "ctrl+j",
+      "command": "workbench.action.quickOpenSelectNext",
+      "when": "vim.active && inQuickOpen"
+    },
+    {
+      "key": "ctrl+k",
+      "command": "workbench.action.quickOpenSelectPrevious",
+      "when": "vim.active && inQuickOpen"
     },
     // vim-tmux-navigator
-    { 
-        "key": "ctrl+h", 
-        "command": "workbench.action.focusPreviousGroup"
-    },
-    { 
-        "key": "ctrl+l", 
-        "command": "workbench.action.focusNextGroup"
-    },
-    { 
-        "key": "ctrl+w", 
-        "command": "deleteWordEndLeft",
-        "when": "terminalFocus"
+    {
+      "key": "ctrl+h",
+      "command": "workbench.action.focusPreviousGroup"
     },
     {
-        "key": "ctrl+j",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      "key": "ctrl+l",
+      "command": "workbench.action.focusNextGroup"
     },
     {
-        "key": "ctrl+n",
-        "command": "-selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      "key": "ctrl+w",
+      "command": "deleteWordEndLeft",
+      "when": "terminalFocus"
     },
     {
-        "key": "ctrl+k",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      "key": "ctrl+j",
+      "command": "selectNextSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "ctrl+p",
-        "command": "-selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      "key": "ctrl+n",
+      "command": "-selectNextSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
-]
+    {
+      "key": "ctrl+k",
+      "command": "selectPrevSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+      "key": "ctrl+p",
+      "command": "-selectPrevSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    { "key": "cmd+1", "command": "workbench.action.openEditorAtIndex1" },
+    { "key": "cmd+2", "command": "workbench.action.openEditorAtIndex2" },
+    { "key": "cmd+3", "command": "workbench.action.openEditorAtIndex3" },
+    { "key": "cmd+4", "command": "workbench.action.openEditorAtIndex4" },
+    { "key": "cmd+5", "command": "workbench.action.openEditorAtIndex5" },
+    { "key": "cmd+6", "command": "workbench.action.openEditorAtIndex6" },
+    { "key": "cmd+7", "command": "workbench.action.openEditorAtIndex7" },
+    { "key": "cmd+8", "command": "workbench.action.openEditorAtIndex8" },
+    { "key": "cmd+9", "command": "workbench.action.openEditorAtIndex9" }
+  ]
+  

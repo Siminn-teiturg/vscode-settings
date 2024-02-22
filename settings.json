@@ -1,7 +1,6 @@
 {
-    "workbench.colorTheme": "Gruvbox Material Dark",
     "gruvboxMaterial.darkWorkbench": "flat",
-    "gruvboxMaterial.darkContrast": "hard",
+    "gruvboxMaterial.darkContrast": "soft",
     "workbench.startupEditor": "none",
 
     // editor
@@ -79,4 +78,32 @@
 "workbench.editor.enablePreview": false,
 "workbench.editor.enablePreviewFromQuickOpen": false,
 "editor.tabSize": 2,
+"[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[objective-c]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+},
+"[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+},
+"[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+},
+"[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"editor.acceptSuggestionOnEnter": "off",
+"editor.fontSize": 14,
+"workbench.colorTheme": "Panda Syntax",
+"vim.foldfix": true,
 }
